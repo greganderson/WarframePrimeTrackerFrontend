@@ -1,5 +1,5 @@
 import Navbar from "./Navbar";
-import Weapons from "./Weapons";
+import { Outlet } from "react-router-dom";
 
 const App: React.FC = () => {
   return (
@@ -10,7 +10,7 @@ const App: React.FC = () => {
       <div className="flex flex-col sm:flex-row flex-1">
         <Navbar />
         <main className="grow p-5 bg-gray-900">
-          <Weapons weaponType="Primary" />
+          <Outlet />
         </main>
       </div>
     </div>
